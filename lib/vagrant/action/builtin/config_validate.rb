@@ -11,8 +11,8 @@ module Vagrant
         end
 
         def call(env)
-          if !env.has_key?(:config_validate) || env[:config_validate]
-            errors = env[:machine].config.validate(env[:machine])
+          #if !env.has_key?(:config_validate) || env[:config_validate]
+          #  errors = env[:machine].config.validate(env[:machine])
 
             if errors && !errors.empty?
               raise Errors::ConfigInvalid,
